@@ -1,11 +1,15 @@
 import React from 'react';
+import NavBar from '../NavBar/NavBar';
+import { Outlet } from 'react-router-dom';
+import Footer from '../Footer/Footer';
 
 const Root = () => {
-    const x =   5;
-function sayHi ( ){console.log('hi')}
+ 
     return (
-        <div>
-            <h2>Hello from root</h2>
+        <div className='max-w-6xl mx-auto'>
+            <NavBar></NavBar>
+            <Outlet></Outlet>
+            <Footer></Footer>
         </div>
     );
 };
