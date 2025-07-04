@@ -12,8 +12,8 @@ const Banner = () => {
           className="w-sm rounded-2xl shadow-2xl"
         />
         </div>
-        <div className='w-[50%]'>
-          <h1 className="text-5xl font-bold mb-10">Books to freshen up your bookshelf</h1>
+        <div className='md:w-[50%]'>
+          <h1 className="text-2xl  md:text-5xl font-bold mb-10">Books to freshen up your bookshelf</h1>
           <Link to='' className='bg-green-500 text-white rounded-lg px-6 py-3'>View The List</Link>
         </div>
       </div>
