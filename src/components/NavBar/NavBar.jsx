@@ -52,13 +52,13 @@ const NavBar = () => {
       <div className="navbar-end">
         <Link
           to=""
-          className="bg-green-500 px-6 py-2 rounded-lg text-white mx-2"
+          className="bg-green-500 text-sm md:text-base px-6 py-2 rounded-lg text-white mx-2"
         >
           Sign In
         </Link>
         <Link
           to=""
-          className="bg-cyan-500 px-6 py-2 rounded-lg text-white mx-2"
+          className="bg-cyan-500 text-sm md:text-base px-6 py-2 rounded-lg text-white mx-2"
         >
           Sign Up
         </Link>
