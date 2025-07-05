@@ -1,4 +1,5 @@
 import { useLoaderData, useParams } from 'react-router-dom';
+import { addToReadList, addToWishlist } from '../utility/addToDb';
 
 const BookDetail = () => {
   const { bookId } = useParams();
@@ -19,6 +20,16 @@ const BookDetail = () => {
     yearOfPublishing,
   } = book;
   // console.log( typeof bookId,  typeof data,  typeof id, typeof book);
+
+  const handleMarkAsRead =(id)=>{
+    addToReadList(id);
+  }
+
+  const handleWhishlist = (id) => {
+    // console.log('wishlist', id);
+    addToWishlist(id);
+  }
+
 
   return (
     <div className="hero py-6 md:py-13">
@@ -78,8 +89,8 @@ const BookDetail = () => {
 
               {/* buttons */}
               <div className='mt-6'>
-                <button className="btn mr-3 tracking-wide">Read</button>
-                <button className="btn bg-cyan-500 text-white tracking-wider ml-3">
+                <button onClick={()=> handleMarkAsRead(bookId)} className="btn mr-3 tracking-wide">Read</button>
+                <button onClick={()=> handleWhishlist (bookId)} className="btn bg-cyan-500 text-white tracking-wider ml-3">
                   Wishlist
                 </button>
               </div>
