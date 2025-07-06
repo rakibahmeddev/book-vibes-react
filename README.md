@@ -2,7 +2,8 @@
 
 **Book Vibes** is a learning project built with React where users can browse, read details, and manage their reading list and wishlist — all stored locally in the browser.
 
-🔗 **Live Demo:** [book-vibes1.netlify.app](https://book-vibes1.netlify.app)
+🔗 **Live Demo (Netlify):** [book-vibes1.netlify.app](https://book-vibes1.netlify.app)  
+🔗 **Live Demo (Surge):** [book-vibes-rakib-1.surge.sh](https://book-vibes-rakib-1.surge.sh)
 
 ---
 
