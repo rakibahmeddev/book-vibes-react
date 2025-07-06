@@ -1,12 +1,41 @@
-# React + Vite
+# 📚 Book Vibes
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Book Vibes** is a learning project built with React where users can browse, read details, and manage their reading list and wishlist — all stored locally in the browser.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** [book-vibes1.netlify.app](https://book-vibes1.netlify.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🎯 Purpose
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This project was built as part of my React learning journey.  
+Working with **localStorage**, **React Router’s `useLoaderData`**, and **`useParams`** was a bit challenging at first but extremely valuable in understanding real-world data flow and route-based loading in React.
+
+---
+
+## 🚀 Features
+
+- Browse a curated list of books
+- View detailed book information
+- Add books to **Read List** or **Wishlist**
+- Toast notifications for user actions
+- Persistent read/wishlist using `localStorage`
+- Responsive design with clean UI
+
+---
+
+## 🛠️ Technologies Used
+
+- ⚛️ **React** – Component-based UI
+- 🌬️ **Tailwind CSS** – Utility-first CSS framework
+- 💄 **DaisyUI** – Prebuilt Tailwind component library
+- 🌐 **React Router DOM** – Page routing and dynamic data loading
+- 🧠 **useLoaderData** – Loader-based route data fetching
+- 🔢 **useParams** – Reading dynamic route parameters
+- 📦 **LocalStorage** – Persistent state management for lists
+- 🎉 **React Toastify** – Elegant toast notifications
+- 🎨 **React Icons** – Beautiful icon components
+
+---
+
+## 📂 Project Structure
