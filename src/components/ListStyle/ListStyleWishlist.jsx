@@ -18,9 +18,9 @@ const ListStyleWishlist = ({ book }) => {
   console.log(book);
 
   return (
-    <div class="flex justify-start items-center  bg-base-200  rounded-2xl shadow my-6">
+    <div class="flex justify-start items-center bg-gray-50 rounded-2xl shadow-sm my-10">
       <div className="">
-        <figure className="bg-base-200 p-6 rounded-2xl">
+        <figure className=" p-6 rounded-2xl">
           <img
             className="w-[150px] h-[200px] rounded-2xl"
             src={image}

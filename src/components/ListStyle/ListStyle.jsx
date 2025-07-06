@@ -17,8 +17,8 @@ const ListStyle = ({ book }) => {
   } = book;
   return (
     <div>
-      <div class="flex justify-start items-center  bg-base-200  rounded-2xl shadow my-6">
-        <figure className="bg-base-200 p-6 rounded-2xl">
+      <div class="flex justify-start items-center bg-gray-50 rounded-2xl shadow-sm my-10">
+        <figure className=" p-6 rounded-2xl">
           <img
             className="w-[134px] h-[166px] rounded-2xl"
             src={image}

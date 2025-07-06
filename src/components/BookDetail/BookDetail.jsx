@@ -1,5 +1,7 @@
 import { useLoaderData, useParams } from 'react-router-dom';
 import { addToReadList, addToWishlist } from '../utility/addToDb';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const BookDetail = () => {
   const { bookId } = useParams();
@@ -21,15 +23,16 @@ const BookDetail = () => {
   } = book;
   // console.log( typeof bookId,  typeof data,  typeof id, typeof book);
 
-  const handleMarkAsRead =(id)=>{
+  const handleMarkAsRead = (id) => {
     addToReadList(id);
-  }
+    toast.success('✅ Book successfully added to Read List');
+  };
 
   const handleWhishlist = (id) => {
     // console.log('wishlist', id);
     addToWishlist(id);
-  }
-
+    toast.info('💖 Book successfully added to wishlist');
+  };
 
   return (
     <div className="hero py-6 md:py-13">
@@ -45,7 +48,7 @@ const BookDetail = () => {
 
               {/* review  */}
               <div>
-                <p className='text-left'>
+                <p className="text-left">
                   <strong>Review: </strong>
                   <span className="text-sm ">{review}</span>
                 </p>
@@ -53,7 +56,7 @@ const BookDetail = () => {
 
               {/* tags  */}
               <div>
-                <div className='text-left'>
+                <div className="text-left">
                   <strong>Tags</strong>
                   {tags.map((tag, idx) => (
                     <div
@@ -88,9 +91,17 @@ const BookDetail = () => {
               </div>
 
               {/* buttons */}
-              <div className='mt-6'>
-                <button onClick={()=> handleMarkAsRead(bookId)} className="btn mr-3 tracking-wide">Read</button>
-                <button onClick={()=> handleWhishlist (bookId)} className="btn bg-cyan-500 text-white tracking-wider ml-3">
+              <div className="mt-6">
+                <button
+                  onClick={() => handleMarkAsRead(bookId)}
+                  className="btn mr-3 tracking-wide"
+                >
+                  Read
+                </button>
+                <button
+                  onClick={() => handleWhishlist(bookId)}
+                  className="btn bg-cyan-500 text-white tracking-wider ml-3"
+                >
                   Wishlist
                 </button>
               </div>
@@ -107,6 +118,8 @@ const BookDetail = () => {
         </div>
       </div>
       <div className="border-b-2 border-amber-400"></div>
+
+      <ToastContainer position="top-right" autoClose={2000} />
     </div>
   );
 };
