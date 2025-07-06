@@ -17,7 +17,7 @@ const ListStyle = ({ book }) => {
   } = book;
   return (
     <div>
-      <div class="card card-side bg-base-100 shadow-sm rounded-2xl my-6">
+      <div class="flex justify-start items-center  bg-base-200  rounded-2xl shadow my-6">
         <figure className="bg-base-200 p-6 rounded-2xl">
           <img
             className="w-[134px] h-[166px] rounded-2xl"
@@ -25,8 +25,8 @@ const ListStyle = ({ book }) => {
             alt={bookName}
           />
         </figure>
-        <div class=" text-left p-6">
-          <h2 class="card-title">{bookName}</h2>
+        <div className=" text-left p-6">
+          <h2 className="card-title">{bookName}</h2>
           <p className="text-base mt-4">
             By: <span className="text-sm ">{author}</span>
           </p>
